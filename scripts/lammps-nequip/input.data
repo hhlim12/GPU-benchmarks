@@ -1,0 +1,20 @@
+#lammps-nequip
+
+units	real
+atom_style atomic
+newton off
+thermo 1
+read_data aspirin.data
+
+pair_style	nequip
+pair_coeff	* * aspirin.pth H O C 
+
+mass            1 1.00794
+mass            2 15.9994
+mass            3 12.0000
+
+neighbor 1.0 bin
+neigh_modify delay 5 every 1
+
+minimize 0.0 1.0e-8 10000 1000000
+write_dump all custom aspirin.dump id type x y z fx fy fz
