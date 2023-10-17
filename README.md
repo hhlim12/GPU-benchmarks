@@ -6,6 +6,8 @@ Collection of codes to benchmark GPU machine
 
 # Benchmarking GPU Hardware for Deep Learning
 
+The following is generated using ChatGPT 3.5
+
 When benchmarking GPU hardware for deep learning, it's important to consider various factors to assess the performance and efficiency of the hardware. Here are some key considerations:
 
 ## Varying Batch Size
